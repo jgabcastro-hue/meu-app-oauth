@@ -3,125 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raio-X Financeiro - Página Oficial do Aplicativo</title>
+    <title>Raio-X Financeiro</title>
     
     <meta name="google-site-verification" content="ZB6AhCU8Pva_RM4e2ZAI1rFi9nNOy81iflutuMLLMXk" />
 
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             color: #333;
             max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: #f4f4f4;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
         }
         .container {
             background-color: #fff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
-        h1 { color: #0f9d58; border-bottom: 2px solid #0f9d58; padding-bottom: 10px; }
-        h2 { color: #424242; margin-top: 30px; }
-        h3 { color: #616161; font-size: 1.1em; margin-bottom: 5px; }
+        h1 { color: #0d47a1; margin-bottom: 10px; }
+        .subtitle { color: #546e7a; font-size: 1.2em; margin-bottom: 40px; }
+        h2 { color: #1976d2; border-bottom: 2px solid #e3f2fd; padding-bottom: 10px; margin-top: 40px; }
         
-        .scope-container {
-            background-color: #e8f0fe;
-            border-left: 5px solid #4285f4;
-            padding: 15px;
+        /* Estilo para Funcionalidades */
+        .feature-box {
             margin-bottom: 20px;
+        }
+        .feature-title { font-weight: bold; color: #2c3e50; font-size: 1.1em; }
+
+        /* Estilo para Escopos (O mais importante para o Google) */
+        .scope-card {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            border-left: 5px solid #ff9800; /* Laranja para chamar atenção para permissões */
+            padding: 20px;
+            margin-bottom: 25px;
             border-radius: 4px;
         }
         .scope-url {
-            font-family: monospace;
-            background-color: #fff;
-            padding: 2px 5px;
-            border-radius: 3px;
-            font-weight: bold;
+            display: inline-block;
+            background-color: #f5f5f5;
             color: #d32f2f;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
         }
-        .highlight {
-            font-weight: bold;
-        }
+        
+        footer { margin-top: 60px; font-size: 0.9em; color: #777; border-top: 1px solid #eee; padding-top: 20px; text-align: center; }
+        a { color: #1976d2; text-decoration: none; }
+        a:hover { text-decoration: underline; }
         .btn {
             display: inline-block;
-            background-color: #4285f4;
+            background-color: #1976d2;
             color: white;
-            padding: 10px 20px;
-            text-decoration: none;
+            padding: 12px 25px;
             border-radius: 5px;
-            margin-top: 20px;
+            font-weight: bold;
         }
-        .btn:hover { background-color: #3367d6; }
-        footer { margin-top: 50px; font-size: 0.9em; color: #777; border-top: 1px solid #ddd; padding-top: 20px; }
+        .btn:hover { background-color: #1565c0; text-decoration: none; }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Raio-X Financeiro</h1>
-        <p class="subtitle">Solução de Automação para Gestão Financeira no Google Sheets™</p>
+        <header>
+            <h1>Raio-X Financeiro</h1>
+            <p class="subtitle">Ferramenta de Automação e Controle Financeiro para Google Sheets™</p>
+        </header>
 
         <section>
-            <h2>Sobre o Aplicativo</h2>
+            <h2>Funcionalidade do Aplicativo</h2>
             <p>
-                O <strong>Raio-X Financeiro</strong> é um script de automação (Add-on/Script) desenvolvido para operar exclusivamente dentro do ambiente do Google Sheets. 
-                Seu propósito principal é facilitar o controle financeiro pessoal através de formulários personalizados que padronizam a entrada de dados.
+                O <strong>Raio-X Financeiro</strong> não é uma plataforma externa, mas sim um <em>Add-on</em> (complemento) de produtividade que roda integrado diretamente à planilha do Google Sheets do usuário. Ele transforma uma planilha em branco em um sistema robusto de gestão financeira através das seguintes funções:
             </p>
-            <p>
-                Diferente de softwares financeiros externos, o Raio-X Financeiro não armazena seus dados em servidores de terceiros. 
-                Ele atua como uma camada de interface entre o usuário e a própria planilha do usuário, garantindo privacidade total.
-            </p>
-            <h3>Principais Funcionalidades:</h3>
-            <ul>
-                <li>Registro automatizado de despesas, receitas e investimentos.</li>
-                <li>Geração de relatórios e dashboards visuais dentro da planilha.</li>
-                <li>Interfaces de formulário (pop-ups) para evitar erros de digitação manual nas células.</li>
-            </ul>
+
+            <div class="feature-box">
+                <div class="feature-title">✅ Interface de Entrada de Dados (Data Entry)</div>
+                <p>O aplicativo substitui a digitação manual nas células por formulários HTML amigáveis (pop-ups). Isso padroniza a entrada de dados, prevenindo erros de formatação em datas e valores monetários.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-title">✅ Automação de Lançamentos</div>
+                <p>Ao enviar um formulário, o script processa as informações e as distribui automaticamente para as abas corretas ("Despesas", "Receitas", "Investimentos"), mantendo o banco de dados do usuário sempre organizado sem intervenção manual.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-title">✅ Dashboards Dinâmicos</div>
+                <p>O sistema processa os dados brutos inseridos pelo usuário para gerar visualizações gráficas e relatórios de fluxo de caixa em tempo real dentro da própria planilha.</p>
+            </div>
         </section>
 
-        <hr>
-
         <section>
-            <h2>Uso de Dados e Permissões (Escopos)</h2>
-            <p>Para fornecer as funcionalidades descritas, o aplicativo solicita as seguintes permissões específicas do Google, com as respectivas justificativas:</p>
+            <h2>Uso de Dados e Justificativa de Permissões</h2>
+            <p>Para executar as funções acima descritas, o aplicativo requer acesso estritamente necessário aos seguintes escopos do Google Workspace. Abaixo detalhamos como cada permissão é utilizada:</p>
 
-            <div class="scope-container">
-                <h3>1. Gerenciamento de Planilhas</h3>
+            <div class="scope-card">
+                <h3>1. Ver, editar, criar e excluir arquivos do Google Planilhas</h3>
                 <span class="scope-url">https://www.googleapis.com/auth/spreadsheets</span>
-                <p><strong>Por que precisamos disso:</strong> O script precisa dessa permissão para <em>escrever</em> os dados financeiros que você insere nos formulários diretamente nas células das abas "Despesas" e "Receitas". Também utilizamos para <em>ler</em> configurações salvas na aba "Configurações" para personalizar as categorias disponíveis.</p>
+                
+                <p><strong>Finalidade Específica:</strong></p>
+                <ul>
+                    <li><strong>Leitura (Read):</strong> O aplicativo lê as configurações definidas pelo usuário na aba "Configurações" (como categorias personalizadas de gastos) para preencher as listas suspensas nos formulários.</li>
+                    <li><strong>Escrita (Write):</strong> Quando o usuário clica em "Salvar" no formulário, o aplicativo precisa desta permissão para escrever os novos dados na próxima linha vazia das abas de registro ("Despesas" ou "Receitas").</li>
+                    <li><strong>Edição:</strong> Permite ordenar os lançamentos por data e atualizar valores caso o usuário edite um registro antigo através da interface do script.</li>
+                </ul>
+                <p><em>Justificativa: Sem este escopo, o aplicativo não consegue interagir com a planilha, tornando impossível a automação de registros.</em></p>
             </div>
 
-            <div class="scope-container">
-                <h3>2. Interface de Usuário Externa</h3>
+            <div class="scope-card">
+                <h3>2. Exibir e executar conteúdo da Web de terceiros em prompts e barras laterais</h3>
                 <span class="scope-url">https://www.googleapis.com/auth/script.container.ui</span>
-                <p><strong>Por que precisamos disso:</strong> Esta permissão é estritamente necessária para <em>exibir</em> as janelas modais (pop-ups) e a barra lateral personalizada onde os formulários de lançamento são apresentados. Sem isso, o usuário teria que digitar os dados manualmente nas células, perdendo a função de automação.</p>
+                
+                <p><strong>Finalidade Específica:</strong></p>
+                <ul>
+                    <li><strong>Interface Gráfica:</strong> Utilizamos este escopo para renderizar os formulários HTML, CSS e JavaScript personalizados que aparecem como janelas modais (pop-ups) ou barras laterais dentro da planilha.</li>
+                    <li><strong>Interatividade:</strong> Permite a criação de botões, menus de seleção e alertas de confirmação (ex: "Lançamento salvo com sucesso") que melhoram a experiência do usuário.</li>
+                </ul>
+                <p><em>Justificativa: Este escopo é essencial para fornecer uma interface visual amigável, evitando que o usuário precise lidar diretamente com códigos ou fórmulas complexas.</em></p>
             </div>
         </section>
 
         <section>
-            <h2>Compromisso com a Privacidade</h2>
+            <h2>Política de Dados e Privacidade</h2>
             <p>
-                O Raio-X Financeiro adere à Política de Dados do Usuário dos Serviços de API do Google, incluindo os requisitos de uso limitado.
+                O Raio-X Financeiro compromete-se com a transparência e a segurança dos seus dados:
             </p>
             <ul>
-                <li><strong>Sem Transferência de Dados:</strong> O aplicativo não transfere dados da sua planilha para nenhum servidor externo.</li>
-                <li><strong>Processamento Local:</strong> Todo o processamento de cálculos ocorre dentro da infraestrutura da sua conta Google.</li>
-                <li><strong>Acesso Restrito:</strong> O desenvolvedor não tem acesso aos dados inseridos nas suas planilhas.</li>
+                <li><strong>Armazenamento Local:</strong> O aplicativo <strong>não possui banco de dados externo</strong>. Todos os seus dados financeiros permanecem salvos exclusivamente dentro da sua própria planilha do Google Sheets.</li>
+                <li><strong>Sem Compartilhamento:</strong> Não compartilhamos, vendemos ou transferimos suas informações para terceiros. O desenvolvedor não tem acesso ao conteúdo das suas planilhas.</li>
+                <li><strong>Execução Segura:</strong> Todo o código é executado dentro do ambiente seguro do Google Apps Script (Google Cloud).</li>
             </ul>
         </section>
 
         <footer>
-            <p>
-                <strong>Links Oficiais:</strong><br>
-                <a href="privacy.html" class="btn">Política de Privacidade</a>
-                <br><br>
-                <em>O uso deste aplicativo está sujeito aos <a href="privacy.html">Termos de Uso</a>. Google Sheets™ é uma marca comercial da Google LLC.</em>
-                <br>
-                Contato do Desenvolvedor: jgab.castro@gmail.com
-            </p>
+            <a href="privacy.html" class="btn">Ler Política de Privacidade Completa</a>
+            <br><br>
+            <p>Contato do Desenvolvedor: jgab.castro@gmail.com</p>
+            <p><small>&copy; 2026 Raio-X Financeiro. Todos os direitos reservados.</small></p>
         </footer>
     </div>
 
