@@ -2,33 +2,63 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-
-  <title>Raio-X Financeiro</title>
-
-<meta name="google-site-verification" content="ZB6AhCU8Pva_RM4e2ZAI1rFi9nNOy81iflutuMLLMXk" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raio-X Financeiro - Automação de Gestão Pessoal</title>
+  <meta name="google-site-verification" content="ZB6AhCU8Pva_RM4e2ZAI1rFi9nNOy81iflutuMLLMXk" />
+  <style>
+    body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+    h1 { color: #2c3e50; }
+    h2 { color: #2980b9; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+    .footer { margin-top: 50px; border-top: 1px solid #eee; padding-top: 20px; }
+    .escopo-box { background: #f9f9f9; padding: 15px; border-radius: 5px; margin: 10px 0; border-left: 5px solid #2980b9; }
+  </style>
 </head>
 
 <body>
-  <h1>Raio-X Financeiro</h1>
+  <h1>Propósito do Aplicativo: Raio-X Financeiro</h1>
 
-  <p>
-    Raio-X Financeiro é uma planilha de controle financeiro pessoal desenvolvida
-    para uso individual e será amplamente compartilhado para diversos usuários. O acesso às funcionalidades é realizado por meio de um
-    script de automação integrado ao Google Sheets.
-  </p>
+  <section>
+    <h2>O que é o Raio-X Financeiro?</h2>
+    <p>
+      O <strong>Raio-X Financeiro</strong> é uma solução de gestão financeira pessoal operada diretamente dentro do Google Sheets. 
+      Seu propósito é automatizar a organização de gastos, receitas e investimentos, transformando dados brutos em visões gráficas claras 
+      e painéis de controle práticos para o usuário final.
+    </p>
+  </section>
 
-  <p>
-    O aplicativo utiliza autenticação OAuth 2.0 do Google exclusivamente para
-    permitir o funcionamento correto das automações dentro da planilha do usuário.
-  </p>
+  <section>
+    <h2>Como as permissões são utilizadas?</h2>
+    <p>Para oferecer automação, o aplicativo solicita acesso a dois recursos específicos do Google, utilizados da seguinte forma:</p>
 
-  <p>
-    Este é um produto comercial destinado a usuários individuais.
-  </p>
+    <div class="escopo-box">
+      <strong>1. Gerenciamento de Planilhas (.../auth/spreadsheets):</strong><br>
+      Utilizado para permitir que o script de automação escreva os dados que você insere nos formulários diretamente nas abas corretas da sua planilha 
+      (como 'Lançamentos' ou 'Categorias'). Sem isso, o preenchimento automático e o cálculo dos gráficos seriam impossíveis.
+    </div>
 
-  <p>
-    🔐 <a href="privacy.html">Acesse nossa Política de Privacidade</a>
-  </p>
+    <div class="escopo-box">
+      <strong>2. Interface de Usuário (.../auth/script.container.ui):</strong><br>
+      Utilizado exclusivamente para exibir janelas de formulários personalizados (pop-ups) dentro da sua planilha, facilitando a entrada de dados 
+      de forma estruturada e amigável.
+    </div>
+  </section>
+
+  <section>
+    <h2>Segurança e Transparência</h2>
+    <p>
+      Este aplicativo não transmite, armazena em servidores externos ou compartilha seus dados financeiros com terceiros. 
+      Toda a inteligência do script roda localmente na sua conta Google Drive e os dados permanecem exclusivamente dentro do seu arquivo pessoal.
+    </p>
+  </section>
+
+  <div class="footer">
+    <p>
+      🔗 <strong>Links Importantes:</strong><br>
+      <a href="https://jgabcastro-hue.github.io/meu-app-oauth/">Página Inicial Oficial</a> | 
+      <a href="https://jgabcastro-hue.github.io/meu-app-oauth/privacy.html">Política de Privacidade Detalhada</a>
+    </p>
+    <p><small>Contato do Desenvolvedor: jgab.castro@gmail.com</small></p>
+  </div>
 
 </body>
 </html>
