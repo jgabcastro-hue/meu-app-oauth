@@ -1,57 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Política de Privacidade</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade - Raio-X Financeiro</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 30px; }
+        h3 { color: #555; margin-bottom: 5px; }
+        .alert-box {
+            background-color: #e8f0fe;
+            border-left: 5px solid #4285f4;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        ul { margin-bottom: 20px; }
+        li { margin-bottom: 10px; }
+        .scope-url {
+            font-family: monospace;
+            background-color: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #d32f2f;
+        }
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.9em;
+            color: #777;
+            text-align: center;
+        }
+        a { color: #2980b9; text-decoration: none; }
+    </style>
 </head>
 <body>
-  <h1>Política de Privacidade</h1>
 
-  <h2>1. Informações Gerais</h2>
-  <p>
-    Este aplicativo (script de automação para Google Sheets) foi desenvolvido para
-    facilitar o controle financeiro pessoal. Ele processa dados diretamente na
-    planilha do usuário.
-  </p>
+    <div class="container">
+        <h1>Política de Privacidade</h1>
+        <p><strong>Última atualização:</strong> 12 de Janeiro de 2026</p>
+        <p>
+            O <strong>Raio-X Financeiro</strong> ("nós", "nosso" ou "aplicativo") é um script de automação (Add-on) desenvolvido para operar integrado ao Google Sheets™. Esta Política de Privacidade descreve como coletamos, usamos e protegemos as informações ao utilizar nossa ferramenta.
+        </p>
 
-  <h2>2. Coleta e Uso de Dados</h2>
-  <p><strong>Dados Processados:</strong> O script acessa apenas as informações fornecidas
-    pelo usuário através dos formulários internos (Gastos, Receitas, Investimentos).
-  </p>
+        <h2>1. Coleta e Uso de Dados</h2>
+        <p>
+            O Raio-X Financeiro foi projetado com a privacidade como prioridade. O aplicativo opera exclusivamente como uma interface para facilitar a entrada de dados na sua própria planilha.
+        </p>
+        <ul>
+            <li><strong>Dados Coletados:</strong> O aplicativo processa apenas os dados financeiros (valores, datas, descrições e categorias) que você insere voluntariamente através dos formulários do sistema.</li>
+            <li><strong>Armazenamento de Dados:</strong> O aplicativo <strong>não possui banco de dados próprio</strong>. Todos os dados inseridos são salvos diretamente e exclusivamente na sua planilha do Google Sheets.</li>
+            <li><strong>Acesso do Desenvolvedor:</strong> O desenvolvedor do Raio-X Financeiro não tem acesso, não visualiza e não armazena o conteúdo das suas planilhas.</li>
+        </ul>
 
-  <p><strong>Finalidade:</strong> Os dados são utilizados exclusivamente para organizar
-    registros financeiros dentro das abas da própria planilha do usuário.
-  </p>
+        <h2>2. Permissões e Escopos do Google (OAuth)</h2>
+        <p>
+            Para funcionar, o aplicativo solicita permissões específicas do Google (Escopos). Abaixo detalhamos a finalidade de cada acesso:
+        </p>
 
-  <p><strong>Armazenamento:</strong> Nossos scripts não armazenam e não transmitem seus
-    dados para nenhum servidor externo. Todas as informações permanecem dentro da
-    conta Google Drive do usuário.
-  </p>
+        <h3>A. Gerenciamento de Planilhas</h3>
+        <span class="scope-url">https://www.googleapis.com/auth/spreadsheets</span>
+        <p>
+            Utilizamos esta permissão para ler as configurações da aba "Configurações" (para personalizar o menu) e para escrever os novos lançamentos nas abas "Despesas", "Receitas" e "Investimentos" quando você envia um formulário.
+        </p>
 
-  <h2>3. Permissões Requeridas (Escopos)</h2>
-  <p>Para funcionar corretamente, o script solicita as seguintes permissões:</p>
-  <ul>
-    <li>
-      <strong>Ver e gerenciar planilhas:</strong> Necessário para inserir os lançamentos
-      nas abas "Despesas", "Receitas" e "Investimentos".
-    </li>
-    <li>
-      <strong>Exibir interface de usuário:</strong> Necessário para abrir as janelas
-      de formulário em HTML.
-    </li>
-  </ul>
+        <h3>B. Interface de Usuário</h3>
+        <span class="scope-url">https://www.googleapis.com/auth/script.container.ui</span>
+        <p>
+            Utilizamos esta permissão para exibir janelas pop-up, barras laterais e alertas personalizados dentro da sua planilha, permitindo a interação visual com o sistema.
+        </p>
 
-  <h2>4. Compartilhamento de Dados</h2>
-  <p>
-    Não compartilhamos, vendemos ou alugamos quaisquer dados dos usuários para terceiros.
-    O acesso aos dados é restrito exclusivamente ao proprietário da planilha.
-  </p>
+        <div class="alert-box">
+            <strong>Declaração de Conformidade com o Uso Limitado (Limited Use Policy):</strong><br>
+            O uso e a transferência de informações recebidas das APIs do Google para qualquer outro aplicativo aderirão à 
+            <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de Uso Limitado.
+        </div>
 
-  <h2>5. Segurança</h2>
-  <p>
-    O script utiliza a infraestrutura de segurança do próprio Google (Google Apps Script)
-    para garantir a proteção das informações.
-  </p>
+        <h2>3. Compartilhamento de Dados</h2>
+        <p>
+            <strong>Nós não compartilhamos seus dados.</strong>
+        </p>
+        <ul>
+            <li>Não vendemos, alugamos ou negociamos informações de usuários com terceiros.</li>
+            <li>Não utilizamos seus dados para publicidade ou marketing.</li>
+            <li>Não transferimos seus dados para ferramentas de Inteligência Artificial (IA) externas para fins de treinamento.</li>
+        </ul>
+
+        <h2>4. Segurança da Informação</h2>
+        <p>
+            Como o aplicativo é executado dentro do ambiente do Google Apps Script, ele se beneficia da mesma infraestrutura de segurança robusta que protege o Google Drive. A segurança dos seus dados depende da proteção da sua própria conta Google (senha e autenticação de dois fatores).
+        </p>
+
+        <h2>5. Seus Direitos e Revogação de Acesso</h2>
+        <p>
+            Você é o proprietário total dos seus dados. A qualquer momento, você pode:
+        </p>
+        <ul>
+            <li>Interromper o uso do aplicativo.</li>
+            <li>Revogar o acesso do aplicativo à sua conta acessando a página de <a href="https://myaccount.google.com/permissions" target="_blank">Permissões da Conta Google</a>.</li>
+            <li>Excluir sua cópia da planilha, o que eliminará permanentemente todos os dados e scripts associados.</li>
+        </ul>
+
+        <h2>6. Contato</h2>
+        <p>
+            Se você tiver dúvidas sobre esta Política de Privacidade ou sobre as práticas do aplicativo, entre em contato conosco:
+        </p>
+        <p>
+            <strong>E-mail:</strong> jgab.castro@gmail.com
+        </p>
+
+        <footer>
+            <p><a href="index.html">Voltar para a Página Inicial</a></p>
+            <p>&copy; 2026 Raio-X Financeiro. Todos os direitos reservados.</p>
+        </footer>
+    </div>
 
 </body>
 </html>
