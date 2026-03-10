@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforme sua Vida Financeira</title>
+    
+    <style>
+        :root {
+            --primary-color: #059669; /* Verde financeiro profissional */
+            --dark-bg: #111827;
+            --light-text: #f9fafb;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ffffff;
+            font-weight: 800;
+        }
+
+        .highlight {
+            color: var(--primary-color);
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            height: 0;
+            margin: 40px 0;
+            background-color: #1f2937;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 18px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: transform 0.2s, background-color 0.2s;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(5, 150, 105, 0.4);
+        }
+
+        .cta-button:hover {
+            background-color: #047857;
+            transform: translateY(-2px);
+        }
+
+        .guarantee-section {
+            margin-top: 60px;
+            padding: 30px;
+            background-color: #1f2937;
+            border-radius: 8px;
+        }
+
+        .benefits {
+            text-align: left;
+            margin-top: 50px;
+        }
+        
+        .benefits ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .benefits li {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .benefits li::before {
+            content: "✓";
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>O Método Definitivo para <span class="highlight">Automatizar e Organizar</span> suas Finanças</h1>
+        <p>Descubra como estruturar seu orçamento de forma profissional sem precisar perder horas preenchendo dados manualmente.</p>
+
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/SEU_VIDEO_AQUI" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+
+        <a href="#link-hotmart" class="cta-button">QUERO GARANTIR MEU ACESSO AGORA</a>
+
+        <div class="benefits">
+            <h2>O que você vai encontrar:</h2>
+            <ul>
+                <li>Módulos completos de gestão de despesas e contas a pagar.</li>
+                <li>Ferramentas automatizadas que economizam seu tempo.</li>
+                <li>Acesso imediato e vitalício à plataforma.</li>
+            </ul>
+        </div>
+
+        <div class="guarantee-section">
+            <h3>Garantia Incondicional de 7 Dias</h3>
+            <p>Se você não se adaptar ao sistema ou achar que não é para você, devolvemos 100% do seu dinheiro. Sem burocracia.</p>
+        </div>
+    </div>
+
+</body>
+</html>
